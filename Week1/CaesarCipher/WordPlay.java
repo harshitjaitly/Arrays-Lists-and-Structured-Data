@@ -42,10 +42,10 @@ public class WordPlay
             {
                 if(i%2 == 0)
                 {
-                    sb.setCharAt(i, '+');    
+                    sb.setCharAt(i, '*');    
                     continue ;
                 }
-                sb.setCharAt(i, '*');    
+                sb.setCharAt(i, '+');    
             }
         }
         return sb.toString() ;
@@ -57,5 +57,13 @@ public class WordPlay
         System.out.println("Phrase : "+phrase) ;
         System.out.println("Character : "+ch) ;
         System.out.println("Replaced : "+replaceVowels(phrase, ch)) ;
+    }
+    public void testEmphasize()
+    {
+        String phrase = "dna ctgaaactga" ;
+        char ch = 'a' ;
+        System.out.println("Phrase : "+phrase) ;
+        System.out.println("Character : "+ch) ;
+        System.out.println("Emphasized : "+emphasize(phrase, ch)) ;
     }
 }
