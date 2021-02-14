@@ -38,7 +38,7 @@ public class WordPlay
         StringBuilder sb = new StringBuilder(phrase) ;
         for(int i=0 ; i<sb.length() ; i++)
         {
-            if(phrase.charAt(i) == ch)
+            if(phrase.charAt(i) == ch || phrase.charAt(i) == Character.toUpperCase(ch))
             {
                 if(i%2 == 0)
                 {
@@ -60,7 +60,7 @@ public class WordPlay
     }
     public void testEmphasize()
     {
-        String phrase = "dna ctgaaactga" ;
+        String phrase = "Mary Bella Abracadabra" ;
         char ch = 'a' ;
         System.out.println("Phrase : "+phrase) ;
         System.out.println("Character : "+ch) ;
