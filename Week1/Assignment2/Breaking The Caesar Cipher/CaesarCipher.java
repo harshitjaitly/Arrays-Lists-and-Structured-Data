@@ -51,10 +51,10 @@ public class CaesarCipher
     }
     public void testEncryptTwoKeys()
     {
-        String input = "At noon be in the conference room with your hat on for a surprise party. YELL LOUD!" ;
-        int key1 = 8 ;
-        int key2 = 21 ;
-        String encrypted = encryptTwoKeys(input, key1, key2) ;
+        String input = "Top ncmy qkff vi vguv vbg ycpx" ;
+        int key1 = 2 ;
+        int key2 = 20 ;
+        String encrypted = encryptTwoKeys(input, 26-key1, 26-key2) ;
         System.out.println("Original essage : "+input) ;
         System.out.println("Key 1: "+key1) ;
         System.out.println("Key 2: "+key2) ;
